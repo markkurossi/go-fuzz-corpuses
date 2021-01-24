@@ -1,0 +1,1 @@
+SELECT(Count)FROM(SELECT"0"AS Name,"1"AS Unit,"2"AS Count FROM'data:text/csv,'FILTER'noheaders')GROUP BY Name,Unit;

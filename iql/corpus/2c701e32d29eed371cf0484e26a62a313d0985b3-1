@@ -1,0 +1,2 @@
+SELECT CASE WHEN Count=0THEN''END
+FROM(SELECT"2"AS Count FROM'data:text/csv;base64,YSwxLAphLDIsCmEsMiw1MApiLDEsNTAKYiwyLDUwCmIsMywKYywxLDEwCmMsMSw='FILTER'noheaders');

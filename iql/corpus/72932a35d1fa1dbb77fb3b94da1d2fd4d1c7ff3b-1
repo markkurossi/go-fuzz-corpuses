@@ -1,0 +1,6 @@
+SELECT T([',
+              CASE
+	           WHEN s.Avg > 160 THEN '30'
+		   ELSE '97'
+	      END,
+	      ';', s.BG, 'm

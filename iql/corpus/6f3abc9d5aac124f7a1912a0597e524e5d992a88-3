@@ -1,0 +1,2 @@
+SELECT t
+FROM(SELECT"1"AS t FROM'data:text/csv;base64,YSwxLAphLDIsCmEsMiw1MApiLDEsNTAKYiwyLDwKYywxLDEwCmMsLDUwCmIsMywKYywxLDEwCmMsMSwa');

@@ -1,0 +1,10 @@
+DECLARE dataurl VARCHAR;SET dataurl 'https://berlin.de/soga/200/2010_dataﬂets/students.sv';
+
+SELECT height,
+       count,
+       HBAR(count, max(count), 20) AS historam
+FROM (
+       SELECT height / 5 * 5 AS height,
+              COUNT(height)  AS count
+       FROM dataurl FILTER 'prepend-headers=seq'
+       G

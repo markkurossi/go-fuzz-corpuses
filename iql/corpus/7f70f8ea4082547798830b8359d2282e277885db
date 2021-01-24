@@ -1,0 +1,2 @@
+SELECT Data.0,Data.1FROM'data:text/csv;base64,MjAwOCwxMDAKMjAwOSwxMDEKMjAxMCwyMDAK'FILTER'noheaders'AS Data
+where Data.0>=2009;

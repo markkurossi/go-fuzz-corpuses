@@ -1,0 +1,2 @@
+DECLARE dataurl VARCHAR;SET dataurl 'https://userpage.fu-berlin.de/soga/200/2010_dataﬂets/students.csv'SELECT t,t,HBAR(t max())AS m
+FROM(SELECT t/5*5AS t,COUNT()AS t FROM dataurl T 
