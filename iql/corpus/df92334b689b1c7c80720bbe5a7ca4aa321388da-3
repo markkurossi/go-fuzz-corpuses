@@ -1,0 +1,1 @@
+SELECT Unit/AVG(Count)FROM(SELECT"1"AS Unit,"2"AS Count FROM'data:text/csv;base64,YSwxLApiLDEsCmMsMSw='FILTER'noheaders');

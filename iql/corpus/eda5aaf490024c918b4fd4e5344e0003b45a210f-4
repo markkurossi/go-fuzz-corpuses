@@ -1,0 +1,1 @@
+DECLARE storeurl VARCHAR;SET storeurl'http://'+7+0SELECT s FROM storeurl e

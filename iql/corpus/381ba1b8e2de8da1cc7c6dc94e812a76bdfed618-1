@@ -1,0 +1,2 @@
+SELECT Data.0FROM'data:text/csv;base64,OjAwOSwKMCwK'FILTER'noheaders'AS Data
+where Data.0>2;

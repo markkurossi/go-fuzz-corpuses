@@ -1,0 +1,6 @@
+SELECT data.'' AS r,
+       data.'1' AS e,
+       data.'2' AS a
+FROM 'test-options.csv'
+     FILTER ''
+     AS data

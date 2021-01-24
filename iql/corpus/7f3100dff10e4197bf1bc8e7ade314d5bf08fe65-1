@@ -1,0 +1,3 @@
+SELECT Year,Year AS Sum
+into data
+FROM(SELECT"0"AS Year FROM'data:text/csv;base64,MjAwOCwKMjAwMjAxMCwK'FILTER'noheaders');SELECT Year,Sum FROM data;

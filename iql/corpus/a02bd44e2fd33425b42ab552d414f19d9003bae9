@@ -1,0 +1,1 @@
+SELECT"0","1"AS[,Value]FROM'data:text/csv;base64,OCwKOSwKMCwK'FILTER'noheaders';

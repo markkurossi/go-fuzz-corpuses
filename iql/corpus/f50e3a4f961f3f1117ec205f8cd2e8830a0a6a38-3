@@ -1,0 +1,1 @@
+SELECT Data.0FROM'data:text/csv,true'FILTER'noheaders'AS Data

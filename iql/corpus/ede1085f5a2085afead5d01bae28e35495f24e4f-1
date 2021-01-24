@@ -1,0 +1,27 @@
+/**/DECLARE storeurl VARCHAR;SET storeurl'http://markkurossi.com/iql/examples/store.html'DECLARE ordersurl VARCHAR;SET ordersurl'http://markkurossi.com/iql/examples/orders.csv'SELECT omersName                AS Name,
+       customers.Address             AS Address,
+       products.Name                 AS Product,
+       orders.Count                  AS Count,
+       products.Price * orders.Count AS Price
+FROM (
+        SELECT c.'.id'      AS ID,
+               c.'.name'    AS Name,
+               c.'.address' AS Address
+        FROM storeurl FILTER 'table:nth-of-type(1) tr' AS c
+        WHERE '.id' <> null
+     ) AS customers,
+     (
+        SELECT p.'.id'    AS ID,
+               p.'.name'  AS Name,
+               p.'.price' AS Price
+        FROM storeurl FILTER 'table:nth-of-type(2) tr' AS p
+        WHERE '.id' <> null
+     ) AS products,
+     (
+       SELECT o.'0' AS ID,
+       	      o.'1' AS Customer,
+       	      o.'2' AS Product,
+       	      o.'3' AS Count
+       FROM ordersurl FILTER 'noheaders' AS o
+     ) AS orders
+WHERE orders.Product = products.ID AND orders.Customer = customers.ID;

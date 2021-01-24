@@ -1,0 +1,1 @@
+SELECT CONCAT((0xb)''CASE WHEN 6THEN''ELSE''END''s'' ''s''(0xb)'')FROM(SELECT CASE WHEN 6THEN''ELSE''END,'','','','',(0xb),''),s

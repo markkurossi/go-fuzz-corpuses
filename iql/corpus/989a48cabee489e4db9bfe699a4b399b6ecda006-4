@@ -1,0 +1,2 @@
+DECLARE storeurl VARCHAR;SET storeurl'http://urosi.com/'DECLARE ordersurl VARCHAR;SET ordersurl''SELECT e AS e,s AS s,s AS t,s AS t,s*s AS e
+FROM(SELECT c.''AS D,c.''AS e,c.''AS s FROM storeurl e
