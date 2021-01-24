@@ -1,0 +1,2 @@
+package main
+func main(a,b int2){return mult(a,b)}func main(){}

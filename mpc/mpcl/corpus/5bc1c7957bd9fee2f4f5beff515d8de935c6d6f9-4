@@ -1,0 +1,2 @@
+package main
+func main(a,b int2){x=minMax(a,b)}func minMax(a,b bool){}

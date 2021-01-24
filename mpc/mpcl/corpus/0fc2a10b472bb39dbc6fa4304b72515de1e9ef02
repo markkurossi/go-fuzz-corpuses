@@ -1,0 +1,2 @@
+package main
+func main(a,b int32)int{return mult(a,b)}func mult(a,b int)int{mType:=make(int,size(a)*2)return mType(a)*mType(b)}

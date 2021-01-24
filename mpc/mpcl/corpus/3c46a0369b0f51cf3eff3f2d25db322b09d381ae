@@ -1,0 +1,6 @@
+
+package main
+
+func main(a, b int2) int {
+	return 1 + 0x01 + 0b10 + 077 + 0o70
+}

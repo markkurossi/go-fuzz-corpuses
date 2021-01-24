@@ -1,0 +1,2 @@
+SELECT e
+FROM 'ansi.json' FILTER 'colors' 

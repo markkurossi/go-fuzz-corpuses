@@ -1,0 +1,2 @@
+SELECT s.D,s.e,s.s
+FROM'store.html FILTER 't

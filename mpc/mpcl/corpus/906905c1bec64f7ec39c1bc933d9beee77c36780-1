@@ -1,0 +1,2 @@
+package main
+func main(a uint65)uint{return a>>1}

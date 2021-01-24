@@ -1,0 +1,2 @@
+SELECT Data.Year,Data.Value
+FROM(SELECT"0"AS Year,"1"AS Value FROM'data:text/csv,'FILTER'noheaders')AS Data;

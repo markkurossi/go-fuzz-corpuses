@@ -1,0 +1,2 @@
+package main
+func main(a,b int4)int6{return a/b}

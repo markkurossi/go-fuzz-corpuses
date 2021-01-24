@@ -1,0 +1,2 @@
+package main
+import("crypto/sha256")func n()t{a.H

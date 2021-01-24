@@ -1,0 +1,6 @@
+/* -*- sql -*- */
+
+SELECT customers.'d'      AS ID,
+       customers.'e'    AS Name,
+       customers.'s' AS Address
+FROM 'store.html' FILTER 'r' AS customers

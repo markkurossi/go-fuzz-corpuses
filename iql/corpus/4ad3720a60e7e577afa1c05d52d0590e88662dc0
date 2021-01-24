@@ -1,0 +1,16 @@
+/* -*- sql -*- */
+
+DECLARE maxLength INTEGER;
+SET maxLength = 100;
+
+SELECT ID,
+       CASE
+            WHEN LEN(Name) > maxLength THEN LEFT(Name, maxLength-3) + '.'
+	    ELSE Name
+       END AS Name,
+       Price
+FROM (
+      SELECT products.'d'    AS ID,
+             products.'e'  AS Name,
+             products.'e' AS Price
+      FROM '.html' FILTER 'r' AS products

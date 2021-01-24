@@ -1,0 +1,8 @@
+declare data varchar;
+set data = 'data:text/csv;base64,MjAwOCwxMDAKMjAwOSwxMDEKMjAxMCwyMDAK';
+SELECT Year AS Y, Value AS V
+FROM (
+        SELECT "0" AS Year,
+               "1" AS Value
+        FROM data FILTER 'noheaders'
+     );

@@ -1,0 +1,4 @@
+SELECT Data.0 AS Year, Data.1 AS Value
+FROM 'data:text/csv;base64,MjAwOCwxMDAKMjAwOSwxMDEKMjAxMCwyMDAK'
+FILTER 'noheaders' AS Data
+where Data.0 >= 2009;

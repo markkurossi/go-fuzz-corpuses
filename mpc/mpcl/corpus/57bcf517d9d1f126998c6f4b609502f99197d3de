@@ -1,0 +1,2 @@
+package main
+func main(a,b int32)(int,int){min,max:=0,1min,max=minMax(a,b)return min,max}func minMax(a,b int)(int,int){if a<b{return a,b}else{return b,a}}

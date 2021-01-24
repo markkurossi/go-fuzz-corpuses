@@ -1,0 +1,2 @@
+package main
+func main(a,b uint6)uint{return a*b}

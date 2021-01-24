@@ -1,0 +1,1 @@
+SELECT CAST(e, maxLength-3) + '.'

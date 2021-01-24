@@ -1,0 +1,7 @@
+/* -*- sql -*- */
+
+SELECT orders.'0' AS ID,
+       orders.'1' AS Customer,
+       orders.'2' AS Product,
+       orders.'3' AS Count
+FROM '.csv' FILTER 's' AS orders;

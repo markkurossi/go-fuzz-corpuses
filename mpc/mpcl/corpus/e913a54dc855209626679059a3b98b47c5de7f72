@@ -1,0 +1,5 @@
+package main//5
+func main(a,b int32)int{
+	var r int32 = 42
+	r = r + a +b
+	return r}

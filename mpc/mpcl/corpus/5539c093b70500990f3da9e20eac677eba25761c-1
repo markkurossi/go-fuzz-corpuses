@@ -1,0 +1,2 @@
+package main
+func main(a,b int6)bool{return a>b}

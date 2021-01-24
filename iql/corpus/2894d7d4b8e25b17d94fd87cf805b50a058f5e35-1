@@ -1,0 +1,2 @@
+SELECT t
+FROM 'orders.csv' FILTER 'noheaders' AS or

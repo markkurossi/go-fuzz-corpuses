@@ -1,0 +1,2 @@
+package main
+func main(b int8)int{var sum int32=0for i:=0;i<5;i=i+1{sum=i}return sum}

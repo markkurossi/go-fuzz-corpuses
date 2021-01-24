@@ -1,0 +1,2 @@
+package main
+var base uint32=2func main(a,b uint32)uint{return b+a+b}

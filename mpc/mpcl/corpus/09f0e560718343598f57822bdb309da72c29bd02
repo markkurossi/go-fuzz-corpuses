@@ -1,0 +1,2 @@
+package main
+func main(b int2)int{if 1%2==0{return 0}return 1}

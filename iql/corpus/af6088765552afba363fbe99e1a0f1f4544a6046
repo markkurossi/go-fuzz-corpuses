@@ -1,0 +1,2 @@
+SELECT CONCAT(C''CASE WHEN s.A>0THEN''ELSE''END''s.G'' ''s.N''C'')AS N,s.G AS G,s.G AS G,s.R AS R,s.G AS G,s.B AS B
+FROM(SELECT a.N,a.G,a.G,a.R,a.G,a.B,(a.d+a.n+a.u)AS A FROM''FILTER''AS a

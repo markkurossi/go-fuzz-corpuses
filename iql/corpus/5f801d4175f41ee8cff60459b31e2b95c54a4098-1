@@ -1,0 +1,2 @@
+SELECT s
+FROM':nth-of-type(1) tr'c

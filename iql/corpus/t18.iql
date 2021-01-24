@@ -1,0 +1,7 @@
+SELECT Year, Value
+FROM (
+        SELECT "0" AS Year,
+               "1" AS Value
+        FROM 'data:text/csv;base64,MjAwOCwxMDAKMjAwOSwxMDEKMjAxMCwyMDAK'
+        FILTER 'noheaders'
+     ) AS Data;

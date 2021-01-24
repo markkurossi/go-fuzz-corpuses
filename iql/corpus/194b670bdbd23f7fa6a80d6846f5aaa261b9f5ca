@@ -1,0 +1,23 @@
+/* -*- sql -*- */
+
+SELECT CONCAT(CHAR(0x1b), '[',
+              CASE
+	           WHEN s.Avg > 6 THEN '0'
+		   ELSE '7'
+	      END,
+	      ';', s.BG, 'm', ' ', s.Name, ' ',
+              CHAR(0x1b), 'm') AS Name,
+	      s.FG	  	 AS FG,
+	      s.BG		 AS BG,
+	      s.Red 	  	 AS Red,
+	      s.Green		 AS Green,
+	      s.Blue		 AS Blue
+FROM (
+      SELECT a.name			    AS Name,
+             a.fg			    AS FG,
+             a.bg			    AS BG,
+             a.red          		    AS Red,
+             a.green        		    AS Green,
+             a.blue         		    AS Blue,
+             (a.red + a.green + a.blue) / 3 AS Avg
+      FROM 'ansi.json' FILTER 's' AS a

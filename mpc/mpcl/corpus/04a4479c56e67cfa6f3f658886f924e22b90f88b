@@ -1,0 +1,2 @@
+package main
+func main(a,b int32)int32{var r int2	r=b	return r}

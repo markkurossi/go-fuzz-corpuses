@@ -1,0 +1,2 @@
+package main
+func main(a,b int32)int{var r int32=2r=r+a+r}

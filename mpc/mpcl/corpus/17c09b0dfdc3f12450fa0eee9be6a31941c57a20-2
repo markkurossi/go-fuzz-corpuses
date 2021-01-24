@@ -1,0 +1,2 @@
+package main
+func main()(int,int){return 4/4}

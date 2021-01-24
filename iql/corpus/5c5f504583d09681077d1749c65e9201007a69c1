@@ -1,0 +1,13 @@
+SELECT Name, Unit, Count,
+       CASE
+            WHEN Count >= 100 THEN 'y'
+            WHEN Count >= 50 THEN  'd'
+            ELSE 'd'
+       END AS Action
+FROM (
+	  SELECT "0" AS Name,
+	         "1" AS Unit,
+	         "2" AS Count
+	  FROM 'data:text/csv;base64,YSwxLDIwMAphLDIsMTAwCmEsMiw1MApiLDEsNTAKYiwyLDUwCmIsMywxMDAKYywxLDEwCmMsMSw3Cg=='
+      FILTER 'noheaders'
+     );
